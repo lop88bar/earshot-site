@@ -28,3 +28,20 @@ footer a { color: var(--ink3); margin-right: 16px; }
 .lang { float: right; font-size: 14px; }
 h3 { color: var(--ink); font-size: 18px; margin: 26px 0 6px; }
 .updated { color: var(--ink3); font-size: 13.5px; font-style: italic; }
+
+/* hero */
+.hero { display: grid; grid-template-columns: 1.1fr 1fr; gap: 28px; align-items: center; min-height: 60vh; }
+.hero-copy { padding: 24px 0; }
+.hero-stage { position: relative; height: 620px; }
+.hero-stage::before { content: ''; position: absolute; inset: 10% 0; background: radial-gradient(closest-side, rgba(198,113,57,.28), transparent 70%); filter: blur(8px); }
+.phone { position: absolute; width: 264px; border-radius: 34px; border: 7px solid #2E2B25; overflow: hidden; box-shadow: 0 30px 60px rgba(0,0,0,.55); background: #141311; }
+.phone img { display: block; width: 100%; }
+.phone.front { right: 4px; top: 40px; z-index: 2; transform: rotate(3deg); }
+.phone.back { right: 190px; top: 90px; z-index: 1; transform: rotate(-7deg); opacity: .85; }
+@media (max-width: 860px) {
+  .hero { grid-template-columns: 1fr; }
+  .hero-stage { height: 560px; margin-top: 8px; }
+  .phone.front { right: calc(50% - 220px); }
+  .phone.back { right: calc(50% + 8px); }
+}
+.wrap-wide { max-width: 1020px; margin: 0 auto; padding: 48px 24px 80px; }
