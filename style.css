@@ -40,8 +40,17 @@ h3 { color: var(--ink); font-size: 18px; margin: 26px 0 6px; }
 .phone.back { right: 190px; top: 90px; z-index: 1; transform: rotate(-7deg); opacity: .85; }
 @media (max-width: 860px) {
   .hero { grid-template-columns: 1fr; }
-  .hero-stage { height: 560px; margin-top: 8px; }
-  .phone.front { right: calc(50% - 220px); }
-  .phone.back { right: calc(50% + 8px); }
+  .hero-stage { height: 540px; margin-top: 8px; }
+  .phone { width: 220px; }
+  .phone.front { right: calc(50% - 225px); top: 30px; }
+  .phone.back { right: calc(50% + 5px); top: 70px; }
 }
+@media (max-width: 560px) {
+  .hero-stage { height: 520px; }
+  .phone.back { display: none; }
+  .phone.front { width: 240px; right: 50%; top: 20px; transform: translateX(50%) rotate(2deg); }
+  h1.word { font-size: 52px; }
+  .hero-stage::before { inset: 5% 10%; }
+}
+body { overflow-x: hidden; }
 .wrap-wide { max-width: 1020px; margin: 0 auto; padding: 48px 24px 80px; }
