@@ -1,3 +1,6 @@
+@font-face { font-family: 'Caprasimo'; src: url('/fonts/Caprasimo_400Regular.ttf') format('truetype'); font-weight: 400; font-display: swap; }
+@font-face { font-family: 'Figtree'; src: url('/fonts/Figtree_400Regular.ttf') format('truetype'); font-weight: 400; font-display: swap; }
+@font-face { font-family: 'Figtree'; src: url('/fonts/Figtree_700Bold.ttf') format('truetype'); font-weight: 700; font-display: swap; }
 :root {
   --page: #141311; --surface: #242320; --ink: #F9F4ED; --ink2: rgba(249,244,237,.72);
   --ink3: rgba(249,244,237,.45); --accent: #C67139; --accent2: #F6A06B; --sage: #AEBF92;
