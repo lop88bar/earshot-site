@@ -2,6 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
 <url><loc>https://earshot.it/</loc><xhtml:link rel="alternate" hreflang="en" href="https://earshot.it/en.html"/></url>
 <url><loc>https://earshot.it/en.html</loc><xhtml:link rel="alternate" hreflang="it" href="https://earshot.it/"/></url>
+<url><loc>https://earshot.it/podcast-per-studiare.html</loc><xhtml:link rel="alternate" hreflang="en" href="https://earshot.it/ai-study-podcast-generator.html"/></url>
+<url><loc>https://earshot.it/ai-study-podcast-generator.html</loc><xhtml:link rel="alternate" hreflang="it" href="https://earshot.it/podcast-per-studiare.html"/></url>
+<url><loc>https://earshot.it/notebooklm-alternativa.html</loc><xhtml:link rel="alternate" hreflang="en" href="https://earshot.it/notebooklm-alternative.html"/></url>
+<url><loc>https://earshot.it/notebooklm-alternative.html</loc><xhtml:link rel="alternate" hreflang="it" href="https://earshot.it/notebooklm-alternativa.html"/></url>
+<url><loc>https://earshot.it/testo-in-podcast.html</loc><xhtml:link rel="alternate" hreflang="en" href="https://earshot.it/text-to-podcast.html"/></url>
+<url><loc>https://earshot.it/text-to-podcast.html</loc><xhtml:link rel="alternate" hreflang="it" href="https://earshot.it/testo-in-podcast.html"/></url>
 <url><loc>https://earshot.it/privacy.html</loc></url>
 <url><loc>https://earshot.it/terms.html</loc></url>
 <url><loc>https://earshot.it/delete-account.html</loc></url>

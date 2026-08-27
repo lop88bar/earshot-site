@@ -57,3 +57,5 @@ h3 { color: var(--ink); font-size: 18px; margin: 26px 0 6px; }
 }
 body { overflow-x: hidden; }
 .wrap-wide { max-width: 1020px; margin: 0 auto; padding: 48px 24px 80px; }
+.cta-btn { display: inline-block; background: var(--accent); color: var(--page); font-weight: 700; border-radius: 999px; padding: 12px 26px; margin-top: 22px; }
+.cta-btn:hover { text-decoration: none; background: var(--accent2); }
