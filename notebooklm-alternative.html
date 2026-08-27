@@ -1,4 +1,4 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="/style.css?v=4">
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="/style.css?v=5">
 <title>NotebookLM Alternative for Studying by Listening | Earshot</title>
 <meta name="description" content="Love NotebookLM's audio overviews but want real, produced episodes on your phone? Earshot is a mobile-first alternative built only for listening.">
 <link rel="icon" type="image/png" href="/favicon.png">
@@ -24,7 +24,13 @@
 <div class="mark"><div class="ring"></div><div class="dot"></div></div>
 <h1 class="word" style="font-size:44px">A NotebookLM alternative built for listening</h1>
 <p class="tag" style="margin-top:10px">NotebookLM is a research notebook where audio is one feature among many. Earshot starts from the opposite end: it only makes audio, and makes it properly. Your notes, PDFs or any topic become produced episodes, with a real narrative voice, music, sound design and a series identity, in a mobile app designed around the moments you actually listen.</p>
-<a class="cta-btn" href="mailto:service@purilian.com?subject=Earshot%20waitlist">Join the waitlist</a>
+<form class="waitlist" id="waitlist-form" autocomplete="on">
+<input type="email" name="email" required placeholder="Your email" aria-label="Your email">
+<select name="interest" aria-label="How will you use it? (optional)"><option value="">How will you use it? (optional)</option><option value="study">For studying</option><option value="work">For work</option><option value="curiosity">Out of curiosity</option></select>
+<input class="hp" type="text" name="website" tabindex="-1" autocomplete="off">
+<button class="cta-btn" type="submit">Join the waitlist</button>
+</form>
+<p class="waitlist-msg" id="waitlist-msg" aria-live="polite"></p>
 <span class="badge" style="margin-left:12px">Private alpha · coming to Google Play</span>
 
 <h2>Where the two tools differ</h2>
@@ -56,4 +62,24 @@
 <a href="/en.html">Home</a><a href="/privacy.html">Privacy</a><a href="/terms.html">Terms</a><a href="mailto:service@purilian.com">Contact</a>
 <p style="margin-top:10px">Earshot is a product of Purilian S.r.l. · Registered office: Via dei Della Robbia 46, 50132 Florence, Italy · VAT/Tax code IT07089720481 · Florence Companies Register · REA FI-678721 · Subscribed share capital € 11,913.48 · Certified email (PEC): puriliansrl@pec.it</p>
 </footer>
-</div><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "9274617eed044f3c8cafb4d5be8f2de0"}'></script></body></html>
+</div><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "9274617eed044f3c8cafb4d5be8f2de0"}'></script><script>
+(function () {
+  var form = document.getElementById('waitlist-form');
+  var msg = document.getElementById('waitlist-msg');
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    if (form.website.value) return;
+    var btn = form.querySelector('button'); btn.disabled = true;
+    fetch('https://retcklfcyrlvignaphgi.supabase.co/rest/v1/waitlist', {
+      method: 'POST',
+      headers: { 'apikey': 'sb_publishable_OaO1tNPHDQhSf4b9LvtSbg_q1YdFQu9', 'Content-Type': 'application/json', 'Prefer': 'return=minimal' },
+      body: JSON.stringify({ email: form.email.value.trim(), interest: form.interest.value || null, locale: document.documentElement.lang, source_page: location.pathname })
+    }).then(function (r) {
+      if (r.status === 201) { msg.textContent = "Done! We'll let you know as Earshot opens up."; form.reset(); }
+      else if (r.status === 409) { msg.textContent = "You're already on the list!"; }
+      else { msg.textContent = 'Something went wrong. Email us: service@purilian.com'; }
+      btn.disabled = false;
+    }).catch(function () { msg.textContent = 'Something went wrong. Email us: service@purilian.com'; btn.disabled = false; });
+  });
+})();
+</script></body></html>
