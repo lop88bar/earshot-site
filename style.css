@@ -66,3 +66,9 @@ body { overflow-x: hidden; }
 .waitlist button.cta-btn { border: none; cursor: pointer; font-family: inherit; font-size: 15px; margin-top: 0; }
 .waitlist .hp { position: absolute; left: -9999px; height: 0; overflow: hidden; }
 .waitlist-msg { margin-top: 10px; font-size: 15px; color: var(--sage); min-height: 22px; }
+.sample { display: flex; gap: 18px; align-items: center; background: var(--surface); border-radius: 18px; padding: 18px; margin-top: 14px; max-width: 620px; flex-wrap: wrap; }
+.sample img { width: 96px; height: 96px; border-radius: 14px; object-fit: cover; flex: 0 0 auto; }
+.sample-info { flex: 1 1 260px; display: flex; flex-direction: column; gap: 6px; }
+.sample-info b { color: var(--ink); font-size: 15.5px; }
+.sample-info span { font-size: 13.5px; color: var(--ink2); }
+.sample audio { width: 100%; margin-top: 4px; }
