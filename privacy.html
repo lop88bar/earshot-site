@@ -1,7 +1,7 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="/style.css?v=3"><title>Earshot — Privacy Policy</title><link rel="icon" type="image/png" href="/favicon.png"></head><body><div class="wrap">
 <a href="/">← earshot</a>
 <h1 class="word" style="font-size:40px">Privacy Policy</h1>
-<p class="updated">Last updated: 26 August 2026 · English below / Italiano sotto</p>
+<p class="updated">Last updated: 14 September 2026 · English below / Italiano sotto</p>
 
 <h2>English</h2>
 <p>Earshot is a personal podcast studio app operated by <b>Purilian s.r.l.</b>, Via dei Della Robbia 46, 50132 Firenze (FI), Italy, VAT IT07089720481 ("we", "us").</p>
@@ -15,7 +15,15 @@
 <h3>How your data is used</h3>
 <p>Solely to provide the service: authenticating you, producing the episodes you request, and playing them back. Content you keep private is visible only to you, enforced server-side. We do not sell your data or use it for advertising.</p>
 <h3>Where your data lives and who processes it</h3>
-<p>Data is stored with Supabase on servers in the European Union (Frankfurt). To produce episodes, the material you provide may be processed by our AI service providers: Anthropic (episode writing and production) and Google (voice synthesis, transcription and push notifications via Firebase). These providers process the content only to deliver the service.</p>
+<p>Data is stored with Supabase on servers in the European Union (Frankfurt). Push notifications are delivered through Apple Push Notification service, Firebase Cloud Messaging (Google) and Expo, which receive only a device token.</p>
+<h3 id="ai">What is sent to AI services, and to whom</h3>
+<p>Episodes are produced by third-party AI services. Before your first request the app asks for your explicit consent; nothing is sent until you agree. What is sent, and to whom:</p>
+<ul>
+<li><b>Anthropic (Claude API)</b>: the text of your requests and chat messages, the transcription of your voice messages, and the text content of documents or photos you attach. Used to write the episode script and to run the producer chat.</li>
+<li><b>Google (Gemini API)</b>: the finished script (for voice synthesis and the transcript check of the produced audio), your voice messages (for transcription) and short music briefs derived from the script (for music generation).</li>
+<li><b>ElevenLabs</b>: short sound-effect descriptions written by the script (no personal data).</li>
+</ul>
+<p>Your email address, password, display name, profile picture and listening data are never sent to AI providers. All three providers act as our processors under their commercial API terms: they process the content only to return the result to us and do not use it to train their models. You can withdraw the consent by deleting your account; see <a href="delete-account.html">account deletion</a>.</p>
 <h3>Website analytics</h3>
 <p>This website uses Cloudflare Web Analytics, a cookieless, privacy-preserving measurement service: no cookies are set, no persistent identifiers are used, and no personal profile is built. Aggregate technical data (page views, country, browser type) is processed by Cloudflare, Inc. as our provider.</p>
 <h3>Permissions</h3>
@@ -35,7 +43,15 @@
 <h3>Come vengono usati</h3>
 <p>Esclusivamente per fornire il servizio: autenticarti, produrre gli episodi che richiedi e riprodurli. I contenuti privati sono visibili solo a te, con controlli applicati lato server. Non vendiamo i tuoi dati e non li usiamo per pubblicità.</p>
 <h3>Dove risiedono i dati e chi li tratta</h3>
-<p>I dati sono conservati su Supabase, su server nell'Unione Europea (Francoforte). Per produrre gli episodi, il materiale che fornisci può essere trattato dai nostri fornitori AI: Anthropic (scrittura e produzione degli episodi) e Google (sintesi vocale, trascrizione e notifiche push tramite Firebase), esclusivamente per erogare il servizio.</p>
+<p>I dati sono conservati su Supabase, su server nell'Unione Europea (Francoforte). Le notifiche push passano da Apple Push Notification service, Firebase Cloud Messaging (Google) ed Expo, che ricevono solo un token del dispositivo.</p>
+<h3 id="ai-it">Cosa viene inviato ai servizi AI, e a chi</h3>
+<p>Gli episodi sono prodotti da servizi AI di terze parti. Prima della tua prima richiesta l'app chiede il tuo consenso esplicito; nulla viene inviato finché non acconsenti. Cosa viene inviato, e a chi:</p>
+<ul>
+<li><b>Anthropic (API Claude)</b>: il testo delle tue richieste e dei messaggi in chat, la trascrizione dei tuoi vocali e il contenuto testuale dei documenti o delle foto che alleghi. Serve a scrivere il copione dell'episodio e alla chat con il produttore.</li>
+<li><b>Google (API Gemini)</b>: il copione finito (per la sintesi vocale e il controllo della trascrizione dell'audio prodotto), i tuoi vocali (per la trascrizione) e brevi indicazioni musicali derivate dal copione (per generare la musica).</li>
+<li><b>ElevenLabs</b>: brevi descrizioni di effetti sonori scritte dal copione (nessun dato personale).</li>
+</ul>
+<p>Email, password, nome visualizzato, foto profilo e dati di ascolto non vengono mai inviati ai fornitori AI. I tre fornitori agiscono come nostri responsabili del trattamento secondo i termini commerciali delle rispettive API: trattano i contenuti solo per restituirci il risultato e non li usano per addestrare i loro modelli. Puoi revocare il consenso eliminando l'account: vedi <a href="delete-account.html">eliminazione account</a>.</p>
 <h3>Statistiche del sito</h3>
 <p>Questo sito usa Cloudflare Web Analytics, un servizio di misurazione senza cookie: nessun cookie, nessun identificatore persistente, nessun profilo personale. Dati tecnici aggregati (pagine viste, paese, tipo di browser) sono trattati da Cloudflare, Inc. come nostro fornitore.</p>
 <h3>Permessi</h3>
